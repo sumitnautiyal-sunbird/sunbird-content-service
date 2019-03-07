@@ -4,9 +4,9 @@ RUN apk update \
    && apk add zip \
    && mkdir -p /opt/content
 RUN apk add python make g++
-RUN npm i gm
 ADD src /opt/content/
 WORKDIR /opt/content/
+RUN npm i gm
 RUN npm install --unsafe-perm
 WORKDIR /opt
 CMD ["zip", "-r", "content_service.zip", "content"]
