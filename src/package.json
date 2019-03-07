@@ -1,5 +1,5 @@
 {
-  "name": "content-service",
+  "name": "player",
   "version": "1.13.0",
   "description": "This service used to perform CRUD operations on content",
   "main": "app.js",
@@ -12,7 +12,7 @@
   "lint-staged": {
     "*.js": "eslint"
   },
-  "author": "sunbird",
+  "author": "societalplatform",
   "license": "ISC",
   "dependencies": {
     "@project-sunbird/telemetry-sdk": "0.0.9",
