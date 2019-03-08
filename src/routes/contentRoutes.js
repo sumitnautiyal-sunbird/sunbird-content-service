@@ -32,7 +32,7 @@ module.exports = function (app) {
 
   app.route(BASE_URL + '/publish/:contentId')
     .post(requestMiddleware.createAndValidateRequestBody, requestMiddleware.validateToken,
-      requestMiddleware.apiAccessForReviewerUser, contentService.publishContentAPI)
+      contentService.publishContentAPI)
 
   app.route(BASE_URL + '/retire')
     .delete(requestMiddleware.createAndValidateRequestBody, requestMiddleware.validateToken,
